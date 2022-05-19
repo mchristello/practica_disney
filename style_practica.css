@@ -1,0 +1,56 @@
+/* NORMALIZE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    max-width: 1200px;
+}
+
+/* NAV-BAR STYLE */
+
+#nav-bar {
+    display: flex;
+    border-bottom-style: outset;
+    margin: 2%;
+}
+
+.nav-bar--flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.nav-bar--flex img {
+    width: 5vw;
+}
+
+.menu {
+    color: black;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 50vw;
+    font-size: 1.4em;
+}
+
+.menu li {
+    margin: 1%;
+    ;
+}
+
+
+/* mediaquery 480px - celular */
+
+@media only screen and (max-width: 480px) {
+
+}
