@@ -1,0 +1,56 @@
+
+// Header
+
+.navbar {
+    @include flex(row, space-between, center, 0);
+    background-color: map-get($colors, base-secondary);
+    border-radius: 2rem;
+    height: 5rem;
+    margin: $spacing-small;
+    font-size: map-get($font-sizes, text-small);
+    & img{
+        border-radius: 50%;
+        width: 50px;
+    }
+    &__menu {
+        list-style: none;
+        @include flex(row, flex-end, center, 5rem);
+        & li {
+            display: inline-block;
+            position: relative;
+            margin: 0 $spacing-xsmall;
+            transition: scale 1s;
+            &:hover {
+                transform: scale(1.1);
+                z-index: 999;
+                background: linear-gradient(to right, #a8c0ff, #3f2b96);
+                border: ridge snow;
+                border-radius: 2rem;
+            }
+        }
+        & a {
+            text-decoration: none;
+            color: map-get($colors, text-color);
+        }
+        & .navbar__submenu {
+            display: none;
+            position:absolute;
+            background: url(../../img/sparkle.jpg);
+            background-size: cover;
+            padding: .5rem;
+            border-radius: 2rem;
+            border:solid snow;
+            li {
+                display: block;
+                white-space: nowrap;
+                line-height: 4rem;
+                margin-left: $spacing-small;
+                font-size: map-get($font-sizes, text-minimal);
+            }
+        }
+        & li:hover ul {
+            display: block;
+        }
+    }
+}
+

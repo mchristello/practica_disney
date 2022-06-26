@@ -1,0 +1,215 @@
+/* Externals */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,900;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+/* Variables */
+/* Font Family */
+/* Font Sizes */
+/* Colors */
+/* Spacings */
+.text-large {
+  font-size: 4em; }
+
+.text-medium {
+  font-size: 2em; }
+
+.text-intermidiate {
+  font-size: 1.8em; }
+
+.text-small {
+  font-size: 1.6em; }
+
+.text-xsmall {
+  font-size: 1em; }
+
+.text-minimal {
+  font-size: 0.7em; }
+
+.red-primary {
+  color: #dc143c; }
+
+.red-secondary {
+  color: #b22222; }
+
+.red-alternative {
+  color: #cd5c5c; }
+
+.green-primary {
+  color: #1ab28a; }
+
+.green-secondary {
+  color: #32cd32; }
+
+.green-alternative {
+  color: #228b22; }
+
+.orange-primary {
+  color: #ffa07a; }
+
+.orange-secondary {
+  color: #ff6347; }
+
+.orange-alternative {
+  color: #ff4500; }
+
+.blue-primary {
+  color: #7fffd4; }
+
+.blue-secondary {
+  color: #5f9ea0; }
+
+.blue-alternative {
+  color: #4a62d8; }
+
+.text-color {
+  color: snow; }
+
+.text-color-alternative {
+  color: #2f4f4f; }
+
+.base {
+  color: #00103a; }
+
+.base-secondary {
+  color: #74dbdb79; }
+
+.base-alternative {
+  color: #6b1000; }
+
+.details {
+  color: #fcc40b; }
+
+/* Mixins */
+/* Normalize */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6em;
+  color: snow;
+  background-color: #00103a; }
+
+/* Header */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  background-color: #74dbdb79;
+  border-radius: 2rem;
+  height: 5rem;
+  margin: 5rem;
+  font-size: 1.6em; }
+  .navbar img {
+    border-radius: 50%;
+    width: 50px; }
+  .navbar__menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5rem; }
+    .navbar__menu li {
+      display: inline-block;
+      position: relative;
+      margin: 0 2.4rem;
+      transition: scale 1s; }
+      .navbar__menu li:hover {
+        transform: scale(1.1);
+        z-index: 999;
+        background: linear-gradient(to right, #a8c0ff, #3f2b96);
+        border: ridge snow;
+        border-radius: 2rem; }
+    .navbar__menu a {
+      text-decoration: none;
+      color: snow; }
+    .navbar__menu .navbar__submenu {
+      display: none;
+      position: absolute;
+      background: url(../../img/sparkle.jpg);
+      background-size: cover;
+      padding: .5rem;
+      border-radius: 2rem;
+      border: solid snow; }
+      .navbar__menu .navbar__submenu li {
+        display: block;
+        white-space: nowrap;
+        line-height: 4rem;
+        margin-left: 5rem;
+        font-size: 0.7em; }
+    .navbar__menu li:hover ul {
+      display: block; }
+
+/* Home */
+.main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, 400px);
+  gap: 1rem;
+  margin: 5rem; }
+  .main .card--mk {
+    grid-column: 1/7;
+    grid-row: 1/2; }
+  .main .card--ak {
+    grid-column: 1/7;
+    grid-row: 2/3; }
+  .main .card--hs {
+    grid-column: 1/7;
+    grid-row: 3/4; }
+  .main .card--e {
+    grid-column: 7/13;
+    grid-row: 1/2; }
+  .main .card--us {
+    grid-column: 7/13;
+    grid-row: 2/3; }
+  .main .card--ioa {
+    grid-column: 7/13;
+    grid-row: 3/4; }
+  .main__cards--left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+    background: #ffffff40;
+    box-shadow: 0 8px 32px 0 #1f26875e;
+    backdrop-filter: blur(4px);
+    border-radius: 2rem;
+    border: 1px solid #ffffff2e; }
+  .main__cards--right {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+    background: #ffffff40;
+    box-shadow: 0 8px 32px 0 #1f26875e;
+    backdrop-filter: blur(4px);
+    border-radius: 2rem;
+    border: 1px solid #ffffff2e; }
+  .main__cards--img {
+    border-radius: 2rem; }
+  .main__cards--content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 1rem; }
+    .main__cards--content h2 {
+      color: #ffa07a; }
+    .main__cards--content .destacado {
+      color: #ebb7b7;
+      font-style: italic;
+      font-weight: normal; }
+
+/* Footer */
+/* MediaQ */

@@ -1,0 +1,62 @@
+
+    // Variables
+
+    /* Font Family */
+
+    $font-principal: 'Montserrat', sans-serif;
+    $font-secondary: 'Roboto Slab', serif;
+    $font-alternative: 'Architects Daughter', cursive;
+
+    /* Font Sizes */
+
+    $font-sizes: (
+        text-large: 4em,
+        text-medium: 2em,
+        text-intermidiate: 1.8em, 
+        text-small: 1.6em,
+        text-xsmall: 1em,
+        text-minimal: .7em
+    );
+
+    /* Colors */
+    
+    $colors: (
+        red-primary: #dc143c,
+        red-secondary: #b22222,
+        red-alternative: #cd5c5c,
+        green-primary: #1ab28a,
+        green-secondary: #32cd32,
+        green-alternative: #228b22,
+        orange-primary: #ffa07a,
+        orange-secondary: #ff6347,
+        orange-alternative: #ff4500,
+        blue-primary: #7fffd4,
+        blue-secondary: #5f9ea0,
+        blue-alternative: #4a62d8,
+        text-color: snow,
+        text-color-alternative: #2f4f4f,
+        base: #00103a,
+        base-secondary: #74dbdb79,
+        base-alternative: #6b1000,
+        details: #fcc40b
+    );
+
+    /* Spacings */
+
+    $spacing-medium: 10rem;
+    $spacing-small: 5rem;
+    $spacing-xsmall: 2.4rem;
+
+
+
+    @each $font-sizes, $value in $font-sizes {
+        .#{$font-sizes} {
+            font-size: #{$value};
+        }
+    }
+
+    @each $colors, $value in $colors {
+        .#{$colors} {
+            color: #{$value};
+        }
+    }

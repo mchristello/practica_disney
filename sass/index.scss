@@ -1,0 +1,31 @@
+/* Externals */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,900;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+/* Variables */
+
+@import './misc/variables';
+
+/* Mixins */
+
+@import './misc/mixins';
+
+/* Normalize */
+
+@import './misc/normalize';
+
+/* Header */
+
+@import './partials/header';
+
+/* Home */
+
+@import './pages/home';
+
+/* Footer */
+
+@import './partials/footer';
+
+/* MediaQ */
