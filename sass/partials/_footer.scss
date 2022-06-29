@@ -1,0 +1,14 @@
+//  Style Footer
+
+.footer {
+    height: 10rem;
+    background-color: #397a6f;
+    box-shadow: 0 0 5rem 2rem #369b8b;
+    & p {
+        text-align: center;
+        margin: 0 auto;
+    }
+    & .destacado {
+        @include destacado(#f79400, italic, normal)
+    }
+}

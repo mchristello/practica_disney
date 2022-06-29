@@ -4,13 +4,13 @@
 .navbar {
     @include flex(row, space-between, center, 0);
     background-color: map-get($colors, base-secondary);
-    border-radius: 2rem;
-    height: 5rem;
+    border-radius: 3rem;
+    height: 8rem;
     margin: $spacing-small;
-    font-size: map-get($font-sizes, text-small);
+    font-size: map-get($font-sizes, text-medium);
     & img{
         border-radius: 50%;
-        width: 50px;
+        width: 8rem;
     }
     &__menu {
         list-style: none;
@@ -35,7 +35,7 @@
         & .navbar__submenu {
             display: none;
             position:absolute;
-            background: url(../../img/sparkle.jpg);
+            background: url(../img/sparkle.jpg);
             background-size: cover;
             padding: .5rem;
             border-radius: 2rem;
@@ -44,8 +44,8 @@
                 display: block;
                 white-space: nowrap;
                 line-height: 4rem;
-                margin-left: $spacing-small;
-                font-size: map-get($font-sizes, text-minimal);
+                margin-left: $spacing-xsmall;
+                font-size: map-get($font-sizes, text-intermidiate);
             }
         }
         & li:hover ul {

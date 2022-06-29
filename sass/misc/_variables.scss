@@ -6,16 +6,18 @@
     $font-principal: 'Montserrat', sans-serif;
     $font-secondary: 'Roboto Slab', serif;
     $font-alternative: 'Architects Daughter', cursive;
+    $font-title: 'Bubblegum Sans', cursive;
 
     /* Font Sizes */
 
     $font-sizes: (
-        text-large: 4em,
-        text-medium: 2em,
-        text-intermidiate: 1.8em, 
-        text-small: 1.6em,
-        text-xsmall: 1em,
-        text-minimal: .7em
+        text-xlarge: 6rem,
+        text-large: 4rem,
+        text-medium: 2.4rem,
+        text-intermidiate: 2rem, 
+        text-small: 1.6rem,
+        text-xsmall: 1.2rem,
+        text-minimal: .7rem
     );
 
     /* Colors */
