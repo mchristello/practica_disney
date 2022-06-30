@@ -1,14 +1,24 @@
 //  Style Footer
 
 .footer {
-    height: 10rem;
+    min-height: 10rem;
+    width: 100%;
     background-color: #397a6f;
     box-shadow: 0 0 5rem 2rem #369b8b;
+    // clip-path: polygon(0 0, 100% 38%, 100% 100%, 0 100%);
+    @include flex(row, space-evenly, center, 1rem);
     & p {
         text-align: center;
-        margin: 0 auto;
+        width: 60%;
     }
     & .destacado {
-        @include destacado(#f79400, italic, normal)
+        @include destacado(#f79400, italic, bold)
+    }
+    &__redes {
+        @include flex(row, center, center, 3rem);
+        width: 40%;
+        & img {
+            width: 20%;
+        }
     }
 }
