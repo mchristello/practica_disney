@@ -1,6 +1,6 @@
 /* Externals */
 
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Bubblegum+Sans&family=Montserrat:ital,wght@0,400;0,900;1,300;1,400;1,900&family=Roboto+Slab:wght@200;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Bubblegum+Sans&family=Chelsea+Market&family=Montserrat:ital,wght@0,400;0,900;1,300;1,400;1,900&family=Roboto+Slab:wght@200;400;900&display=swap');
 
 /* Variables */
 
@@ -34,8 +34,22 @@
 
 @import './pages/hollywood_studios';
 
+/* Epcot */
+
+@import './pages/epcot';
+
+/* Universal */
+
+@import './pages/universal';
+
+/* Island of Adventure */
+
+@import './pages/island_of_adventure';
+
 /* Footer */
 
 @import './partials/footer';
 
 /* MediaQ */
+
+@import './misc/@mediaq';

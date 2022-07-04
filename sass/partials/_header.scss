@@ -4,10 +4,14 @@
 .navbar {
     @include flex(row, space-between, center, 0);
     background-color: map-get($colors, base-secondary);
+    position: sticky;
+    top: 10px;
     border-radius: 3rem;
     height: 8rem;
     margin: $spacing-small;
     font-size: map-get($font-sizes, text-medium);
+    z-index: 999;    
+    border:solid snow;
     & img{
         border-radius: 50%;
         width: 8rem;
@@ -22,7 +26,6 @@
             transition: scale 1s;
             &:hover {
                 transform: scale(1.1);
-                z-index: 999;
                 background: linear-gradient(to right, #a8c0ff, #3f2b96);
                 border: ridge snow;
                 border-radius: 2rem;

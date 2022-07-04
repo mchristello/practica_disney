@@ -7,27 +7,34 @@
 .welcome__index {
     margin: $spacing-medium 1rem;
     @include flex(column, center, center, 0);
+    position: relative;
+    text-align: center;
     & img {
         box-shadow: 0 0 3rem 1rem #dbd3d3;
         width: 90%;
+        border-radius: 5rem;
     }
     & h1 {
-        font-family: $font-alternative;
+        font-size: map-get($font-sizes, text-large);
+        font-family: $font-names;
         backdrop-filter: blur(.8rem);
         border-radius: 5rem;
         position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
 .main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(3, 40rem);
+    grid-template-rows: repeat(3, 1fr);
     gap: 2rem;
-    margin: $spacing-small;
-    & img:hover {
-        transform: scale(1.1, 1.1);
-        transition: all .8s;
+    margin: $spacing-medium auto;
+    width: 85vw;
+    & img {
+        width: 15vw;
     }
     & .card--mk {
         grid-column: 1/7;

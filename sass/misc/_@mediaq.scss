@@ -1,0 +1,114 @@
+// MediaQuerys
+
+@media only screen and (max-width: 1100px) {
+
+    .index__hr {
+        box-shadow: 0 0 1rem 1rem #e4dada;
+    }
+
+    .welcome__index {
+        margin: $spacing-small .5rem;
+        & h1 {
+            font-size: map-get($font-sizes, text-medium);
+        }
+    }
+
+    .main {
+        @include flex(column, center, center, 1rem);
+        margin: 3rem auto;
+        & img:hover {
+            transform: none;
+        }
+        &__cards--right {
+            flex-direction: row;
+        }
+    }
+
+    /* MediaQ para Magic Kingdom */
+
+    .mk__hr {
+        box-shadow: 0 0 1.5rem 1.5rem #c16be9;
+    }
+
+    .mk__intro {
+        line-height: 1.5;
+        margin: $spacing-xsmall $spacing-small;
+        &--history {
+            width: 60vw;
+        }
+        & img {
+            width: 40vw;
+        }
+    }
+
+    .mk__gallery {
+        width: 85vw;
+        gap: 1rem;
+        margin: $spacing-small auto;
+    }
+
+    /* MediaQ para Animal Kingdom */
+
+    .ak__hr {
+        box-shadow: 0 0 1.5rem 1.5rem #1d9240;
+    }
+
+    .welcome__ak h1 {
+        top: 40%!important;
+    }
+
+    .ak {
+        width: 75vw;
+    }
+
+    /* MediaQ para Hollywood */
+
+    .hs__hr {
+        box-shadow: 0 0 1.5rem 1.5rem #d81616;
+    }
+
+    .welcome__hs h1 {
+        top: 55%!important;
+    }
+
+    .hs {
+        width: 85vw;
+        & img {
+            width: 70vw;
+        }
+        &__gallery {
+            width: 85vw;
+            gap: 1rem;
+            margin: $spacing-small auto;
+        }
+    }
+
+    /* MediaQ para Epcot */
+
+    .ep__hr {
+        box-shadow: 0 0 1.5rem 1.5rem #0d11ee;
+    }
+
+    .ep img {
+        width: 50vw;
+    }
+
+    .ep__gallery {
+        width: 85vw;
+        margin: $spacing-small auto;
+    }
+
+    /* MediaQ para Universal */
+
+
+
+    /* MediaQ para IoA */
+
+
+
+    /* MediaQ para Footer */
+
+    
+
+
+}
