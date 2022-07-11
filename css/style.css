@@ -104,9 +104,10 @@ body {
   align-items: center;
   gap: 0;
   background-color: #338f8ff7;
-  position: sticky;
+  position: fixed;
   top: 10px;
   border-radius: 3rem;
+  width: 90vw;
   height: 8rem;
   margin: 5rem;
   font-size: 2.4rem;
@@ -153,23 +154,22 @@ body {
       display: block; }
 
 /* Home */
-.index__hr {
-  box-shadow: 0 0 2rem 2rem #e4dada; }
-
-.welcome__index, .welcome__mk, .welcome__ak, .welcome__hs, .welcome__ep, .welcome__us {
-  margin: 10rem 1rem;
+.welcome__index, .welcome__mk, .welcome__ak, .welcome__hs, .welcome__ep, .welcome__us, .welcome__contacto {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0;
   position: relative;
-  text-align: center; }
-  .welcome__index img, .welcome__mk img, .welcome__ak img, .welcome__hs img, .welcome__ep img, .welcome__us img {
-    box-shadow: 0 0 3rem 1rem #dbd3d3;
-    width: 90%;
-    border-radius: 5rem; }
-  .welcome__index h1, .welcome__mk h1, .welcome__ak h1, .welcome__hs h1, .welcome__ep h1, .welcome__us h1 {
+  text-align: center;
+  background-image: url(../../img/GE_cover.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh; }
+  .welcome__index h1, .welcome__mk h1, .welcome__ak h1, .welcome__hs h1, .welcome__ep h1, .welcome__us h1, .welcome__contacto h1 {
     font-size: 4rem;
     font-family: "Chelsea Market", cursive;
     backdrop-filter: blur(0.8rem);
@@ -247,24 +247,21 @@ body {
       font-weight: normal; }
 
 /* Magic Kingdom */
-.mk__hr {
-  box-shadow: 0 0 2rem 2rem #c16be9; }
-
 .mk__destacado {
   color: #d68492;
   font-style: italic;
   font-weight: bold; }
 
-.welcome__mk h1 {
-  color: darkmagenta;
-  font-size: 6rem; }
-
-.welcome__mk h3 {
-  font-family: "Architects Daughter", cursive;
-  font-size: 2rem; }
-
-.welcome__mk img {
-  border-radius: 5rem; }
+.welcome__mk {
+  background-image: url(../../img/MK_cover.jpg); }
+  .welcome__mk h1 {
+    color: darkmagenta;
+    font-size: 6rem; }
+  .welcome__mk h3 {
+    font-family: "Architects Daughter", cursive;
+    font-size: 2rem; }
+  .welcome__mk img {
+    border-radius: 5rem; }
 
 .mk__intro {
   display: flex;
@@ -334,22 +331,20 @@ body {
     grid-row: 4/6; }
 
 /* Animal Kingdom */
-.ak__hr {
-  box-shadow: 0 0 2rem 2rem #1d9240; }
-
 .ak__destacado {
   color: #32cd32;
   font-style: italic;
   font-weight: bold; }
 
-.welcome__ak h1 {
-  font-size: 6rem;
-  color: #4ed660;
-  backdrop-filter: blur(0.8rem);
-  font-family: "Chelsea Market", cursive; }
-
-.welcome__ak img {
-  border-radius: 5rem; }
+.welcome__ak {
+  background-image: url(../../img/AK_cover.jpg); }
+  .welcome__ak h1 {
+    font-size: 6rem;
+    color: #4ed660;
+    backdrop-filter: blur(0.8rem);
+    font-family: "Chelsea Market", cursive; }
+  .welcome__ak img {
+    border-radius: 5rem; }
 
 .ak, .mk, .ep {
   margin: 0 auto;
@@ -548,20 +543,18 @@ body {
   color: #000; }
 
 /* Hollywood Studios */
-.hs__hr {
-  box-shadow: 0 0 2rem 2rem #d81616; }
-
 .hs__destacado {
   color: #c22121;
   font-style: italic;
   font-weight: bold; }
 
-.welcome__hs h1 {
-  font-size: 6rem;
-  color: #dd2727; }
-
-.welcome__hs img {
-  border-radius: 5rem; }
+.welcome__hs {
+  background-image: url(../../img/HS_cover.jpg); }
+  .welcome__hs h1 {
+    font-size: 6rem;
+    color: #dd2727; }
+  .welcome__hs img {
+    border-radius: 5rem; }
 
 .hs, .us {
   display: flex;
@@ -632,22 +625,20 @@ body {
       grid-row: 3/4; }
 
 /* Epcot */
-.ep__hr {
-  box-shadow: 0 0 2rem 2rem #0d11ee; }
-
 .ep__destacado {
   color: #3491fc;
   font-style: italic;
   font-weight: bold; }
 
-.welcome__ep h1 {
-  font-size: 6rem;
-  color: #1302fd;
-  top: 30% !important; }
-
-.welcome__ep img {
-  box-shadow: 0 0 3rem 1rem #6973fc;
-  border-radius: 2rem; }
+.welcome__ep {
+  background-image: url(../../img/EP_cover.jpg); }
+  .welcome__ep h1 {
+    font-size: 6rem;
+    color: #b7b3fd;
+    top: 30% !important; }
+  .welcome__ep img {
+    box-shadow: 0 0 3rem 1rem #6973fc;
+    border-radius: 2rem; }
 
 .ep b {
   color: #6e78fa !important; }
@@ -713,22 +704,20 @@ body {
     grid-row: 4/5; }
 
 /* Universal */
-.us__hr {
-  box-shadow: 0 0 2rem 2rem #e9fa00; }
-
 .us__destacado {
   color: #e9fa00;
   font-style: italic;
   font-weight: bold; }
 
-.welcome__us h1 {
-  font-size: 6rem;
-  color: #e9fa00;
-  top: 20%;
-  left: 50%; }
-
-.welcome__us img {
-  border-radius: 5rem; }
+.welcome__us {
+  background-image: url(../../img/US_cover.jpg); }
+  .welcome__us h1 {
+    font-size: 6rem;
+    color: #e9fa00;
+    top: 70%;
+    left: 50%; }
+  .welcome__us img {
+    border-radius: 5rem; }
 
 .us__intro {
   font-size: 2rem; }
@@ -783,6 +772,74 @@ body {
     grid-row: 3/4; }
 
 /* Island of Adventure */
+/* Contacto */
+.welcome__contacto {
+  background-image: url(../../img/orlando_MCO.jpg);
+  margin-bottom: 10rem; }
+  .welcome__contacto h1 {
+    font-size: 6rem;
+    color: #1a1818; }
+  .welcome__contacto img {
+    border-radius: 5rem; }
+
+.title {
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Bubblegum Sans", cursive;
+  margin-bottom: 5rem; }
+
+.contacto {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  text-align: center; }
+  .contacto__img {
+    border-radius: 1rem;
+    transform: translate(-150px, 15px);
+    z-index: -1; }
+  .contacto__form {
+    border: outset 2px;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    margin: 5rem auto;
+    width: 50vw;
+    background: linear-gradient(to left, #373b44, #4286f4);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    opacity: 90%; }
+    .contacto__form--label {
+      font-size: 2.4rem;
+      text-decoration: underline;
+      font-weight: bold; }
+    .contacto__form--input {
+      text-align: center;
+      margin-bottom: 2rem;
+      width: 30vw;
+      height: 4vh;
+      cursor: pointer;
+      font-style: italic; }
+    .contacto__form--boton {
+      font-size: 2rem;
+      width: 10vw;
+      height: 4vh;
+      background-color: #ffa07a;
+      border: ridge 2px snow;
+      border-radius: 1rem;
+      transition: all .8s;
+      cursor: pointer; }
+    .contacto__form--boton:hover {
+      background-color: #ff4500;
+      width: 20vw; }
+
 /* Footer */
 .footer {
   min-height: 10rem;
@@ -816,10 +873,10 @@ body {
 @media only screen and (max-width: 1100px) {
   .index__hr {
     box-shadow: 0 0 1rem 1rem #e4dada; }
-  .welcome__index, .welcome__mk, .welcome__ak, .welcome__hs, .welcome__ep, .welcome__us {
+  .welcome__index, .welcome__mk, .welcome__ak, .welcome__hs, .welcome__ep, .welcome__us, .welcome__contacto {
     margin: 5rem 0.5rem; }
-    .welcome__index h1, .welcome__mk h1, .welcome__ak h1, .welcome__hs h1, .welcome__ep h1, .welcome__us h1 {
-      font-size: 2.4rem; }
+    .welcome__index h1, .welcome__mk h1, .welcome__ak h1, .welcome__hs h1, .welcome__ep h1, .welcome__us h1, .welcome__contacto h1 {
+      font-size: 4rem; }
   .main {
     display: flex;
     flex-direction: column;

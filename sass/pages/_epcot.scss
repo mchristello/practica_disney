@@ -1,18 +1,15 @@
 // Style para Epcot
 
-.ep__hr {
-    box-shadow: 0 0 2rem 2rem #0d11ee;
-}
-
 .ep__destacado {
     @include destacado(#3491fc, italic, bold);
 }
 
 .welcome__ep {
     @extend .welcome__index;
+    background-image: url(../../img/EP_cover.jpg);
     & h1 {
         font-size: map-get($font-sizes, text-xlarge);
-        color: #1302fd;
+        color: #b7b3fd;
         top: 30%!important;
         }
     & img {

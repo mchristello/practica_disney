@@ -1,15 +1,12 @@
 // Style Hollywood Studios
 
-.hs__hr {
-    box-shadow: 0 0 2rem 2rem #d81616;
-}
-
 .hs__destacado {
     @include destacado(#c22121, italic, bold);
 }
 
 .welcome__hs {
     @extend .welcome__index;
+    background-image: url(../../img/HS_cover.jpg);
     & h1 {
         font-size: map-get($font-sizes, text-xlarge);
         color: #dd2727;

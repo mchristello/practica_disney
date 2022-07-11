@@ -1,19 +1,16 @@
 // Style Home
 
-.index__hr {
-    box-shadow: 0 0 2rem 2rem #e4dada;
-}
-
 .welcome__index {
-    margin: $spacing-medium 1rem;
     @include flex(column, center, center, 0);
     position: relative;
     text-align: center;
-    & img {
-        box-shadow: 0 0 3rem 1rem #dbd3d3;
-        width: 90%;
-        border-radius: 5rem;
-    }
+    background-image: url(../../img/GE_cover.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
     & h1 {
         font-size: map-get($font-sizes, text-large);
         font-family: $font-names;

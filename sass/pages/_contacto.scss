@@ -1,0 +1,72 @@
+// Style Contacto 
+
+.welcome__contacto {
+    @extend .welcome__index;
+    background-image: url(../../img/orlando_MCO.jpg);
+    margin-bottom: $spacing-medium;
+    & h1 {
+        font-size: map-get($font-sizes, text-xlarge);
+        color: #1a1818;
+    }
+    & img {
+        border-radius: 5rem;
+    }
+}
+
+.title {
+    text-align: center;
+    font-size: map-get($font-sizes, text-large);
+    font-family: $font-title;
+    margin-bottom: $spacing-small;
+}
+
+.contacto {
+    @include flex(row-reverse, center, center, 0);
+    text-align: center;
+    &__img {
+        border-radius: 1rem;
+        transform: translate(-150px, 15px);
+        z-index: -1;
+    }
+    &__form {
+        border: outset 2px;
+        border-radius: 1rem;
+        @include flex(column, center, center, 1rem);
+        padding: 2rem;
+        margin: $spacing-small auto;
+        width: 50vw;
+        background: linear-gradient(to left, #373b44, #4286f4);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        opacity: 90%;
+        &--label {
+            font-size: map-get($font-sizes, text-medium);
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        &--input {
+            text-align: center;
+            margin-bottom: 2rem;
+            width: 30vw;
+            height: 4vh;
+            cursor: pointer;
+            font-style: italic;
+        }
+        &--boton {
+            font-size: map-get($font-sizes, text-intermidiate);
+            width: 10vw;
+            height: 4vh;
+            background-color: map-get($colors, orange-primary);
+            border: ridge 2px snow;
+            border-radius: 1rem;
+            transition: all .8s;
+            cursor: pointer;
+        }
+        &--boton:hover {
+            background-color: map-get($colors, orange-alternative);
+            width: 20vw;
+        }
+    }
+}

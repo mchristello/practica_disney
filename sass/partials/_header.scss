@@ -4,9 +4,10 @@
 .navbar {
     @include flex(row, space-between, center, 0);
     background-color: map-get($colors, base-secondary);
-    position: sticky;
+    position: fixed;
     top: 10px;
     border-radius: 3rem;
+    width: 90vw;
     height: 8rem;
     margin: $spacing-small;
     font-size: map-get($font-sizes, text-medium);

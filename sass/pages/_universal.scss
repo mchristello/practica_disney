@@ -1,19 +1,16 @@
 // Style para Universal
 
-.us__hr {
-    box-shadow: 0 0 2rem 2rem #e9fa00;
-}
-
 .us__destacado {
     @include destacado(#e9fa00, italic, bold);
 }
 
 .welcome__us {
     @extend .welcome__index;
+    background-image: url(../../img/US_cover.jpg);
     & h1 {
         font-size: map-get($font-sizes, text-xlarge);
         color: #e9fa00;        
-        top: 20%;
+        top: 70%;
         left: 50%;
     }
     & img {

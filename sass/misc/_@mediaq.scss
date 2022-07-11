@@ -9,7 +9,7 @@
     .welcome__index {
         margin: $spacing-small .5rem;
         & h1 {
-            font-size: map-get($font-sizes, text-medium);
+            font-size: map-get($font-sizes, text-large);
         }
     }
 
