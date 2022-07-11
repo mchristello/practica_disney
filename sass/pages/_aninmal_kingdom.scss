@@ -6,7 +6,7 @@
 
 .welcome__ak {
     @extend .welcome__index;
-    background-image: url(../../img/AK_cover.jpg);
+    background-image: url(../img/AK_cover.jpg);
     & h1 {
         font-size: map-get($font-sizes, text-xlarge);
         color: #4ed660;

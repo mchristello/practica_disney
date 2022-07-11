@@ -2,7 +2,7 @@
 
 .welcome__contacto {
     @extend .welcome__index;
-    background-image: url(../../img/orlando_MCO.jpg);
+    background-image: url(../img/orlando_MCO.jpg);
     margin-bottom: $spacing-medium;
     & h1 {
         font-size: map-get($font-sizes, text-xlarge);

@@ -162,7 +162,7 @@ body {
   gap: 0;
   position: relative;
   text-align: center;
-  background-image: url(../../img/GE_cover.jpg);
+  background-image: url(../img/GE_cover.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -253,7 +253,7 @@ body {
   font-weight: bold; }
 
 .welcome__mk {
-  background-image: url(../../img/MK_cover.jpg); }
+  background-image: url(../img/MK_cover.jpg); }
   .welcome__mk h1 {
     color: darkmagenta;
     font-size: 6rem; }
@@ -337,7 +337,7 @@ body {
   font-weight: bold; }
 
 .welcome__ak {
-  background-image: url(../../img/AK_cover.jpg); }
+  background-image: url(../img/AK_cover.jpg); }
   .welcome__ak h1 {
     font-size: 6rem;
     color: #4ed660;
@@ -549,7 +549,7 @@ body {
   font-weight: bold; }
 
 .welcome__hs {
-  background-image: url(../../img/HS_cover.jpg); }
+  background-image: url(../img/HS_cover.jpg); }
   .welcome__hs h1 {
     font-size: 6rem;
     color: #dd2727; }
@@ -631,7 +631,7 @@ body {
   font-weight: bold; }
 
 .welcome__ep {
-  background-image: url(../../img/EP_cover.jpg); }
+  background-image: url(../img/EP_cover.jpg); }
   .welcome__ep h1 {
     font-size: 6rem;
     color: #b7b3fd;
@@ -710,7 +710,7 @@ body {
   font-weight: bold; }
 
 .welcome__us {
-  background-image: url(../../img/US_cover.jpg); }
+  background-image: url(../img/US_cover.jpg); }
   .welcome__us h1 {
     font-size: 6rem;
     color: #e9fa00;
@@ -774,7 +774,7 @@ body {
 /* Island of Adventure */
 /* Contacto */
 .welcome__contacto {
-  background-image: url(../../img/orlando_MCO.jpg);
+  background-image: url(../img/orlando_MCO.jpg);
   margin-bottom: 10rem; }
   .welcome__contacto h1 {
     font-size: 6rem;

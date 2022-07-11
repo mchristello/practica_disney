@@ -6,7 +6,7 @@
 
 .welcome__mk {
     @extend .welcome__index;
-    background-image: url(../../img/MK_cover.jpg);
+    background-image: url(../img/MK_cover.jpg);
     & h1 {
         color: darkmagenta;
         font-size: map-get($font-sizes, text-xlarge);

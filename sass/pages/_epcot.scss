@@ -6,7 +6,7 @@
 
 .welcome__ep {
     @extend .welcome__index;
-    background-image: url(../../img/EP_cover.jpg);
+    background-image: url(../img/EP_cover.jpg);
     & h1 {
         font-size: map-get($font-sizes, text-xlarge);
         color: #b7b3fd;

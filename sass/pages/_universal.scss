@@ -6,7 +6,7 @@
 
 .welcome__us {
     @extend .welcome__index;
-    background-image: url(../../img/US_cover.jpg);
+    background-image: url(../img/US_cover.jpg);
     & h1 {
         font-size: map-get($font-sizes, text-xlarge);
         color: #e9fa00;        
