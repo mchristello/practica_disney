@@ -36,10 +36,10 @@
         margin: $spacing-small auto;
         width: 50vw;
         background: linear-gradient(to left, #373b44, #4286f4);
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        box-shadow: 0 8px 32px 0 #1f26875e;
         backdrop-filter: blur( 4px );
         border-radius: 10px;
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        border: 1px solid #ffffff2e;
         opacity: 90%;
         &--label {
             font-size: map-get($font-sizes, text-medium);

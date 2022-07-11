@@ -154,7 +154,7 @@ body {
       display: block; }
 
 /* Home */
-.welcome__index, .welcome__mk, .welcome__ak, .welcome__hs, .welcome__ep, .welcome__us, .welcome__contacto {
+.welcome__index, .welcome__mk, .welcome__ak, .welcome__hs, .welcome__ep, .welcome__us, .welcome__ioa, .welcome__contacto {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -169,7 +169,7 @@ body {
   background-attachment: fixed;
   width: 100%;
   height: 100vh; }
-  .welcome__index h1, .welcome__mk h1, .welcome__ak h1, .welcome__hs h1, .welcome__ep h1, .welcome__us h1, .welcome__contacto h1 {
+  .welcome__index h1, .welcome__mk h1, .welcome__ak h1, .welcome__hs h1, .welcome__ep h1, .welcome__us h1, .welcome__ioa h1, .welcome__contacto h1 {
     font-size: 4rem;
     font-family: "Chelsea Market", cursive;
     backdrop-filter: blur(0.8rem);
@@ -255,7 +255,7 @@ body {
 .welcome__mk {
   background-image: url(../img/MK_cover.jpg); }
   .welcome__mk h1 {
-    color: darkmagenta;
+    color: #f19bf1;
     font-size: 6rem; }
   .welcome__mk h3 {
     font-family: "Architects Daughter", cursive;
@@ -298,7 +298,7 @@ body {
   align-items: center;
   justify-items: stretch;
   margin: 10rem auto;
-  width: 70vw; }
+  width: 75vw; }
   .mk__gallery img {
     border-radius: 2rem;
     transition: all 1s; }
@@ -553,8 +553,6 @@ body {
   .welcome__hs h1 {
     font-size: 6rem;
     color: #dd2727; }
-  .welcome__hs img {
-    border-radius: 5rem; }
 
 .hs, .us {
   display: flex;
@@ -578,7 +576,7 @@ body {
     .hs p b, .us p b {
       color: #d17015; }
     .hs p i, .us p i {
-      color: #c0b1b1; }
+      color: #ceb588; }
   .hs figure, .us figure {
     display: flex;
     flex-direction: column;
@@ -598,7 +596,7 @@ body {
     align-items: stretch;
     justify-items: stretch;
     margin: 10rem auto;
-    width: 70vw; }
+    width: 75vw; }
     .hs__gallery img {
       border-radius: 2rem;
       transition: all 1s; }
@@ -665,7 +663,7 @@ body {
   gap: 1rem;
   justify-items: stretch;
   margin: 10rem auto;
-  width: 70vw; }
+  width: 75vw; }
   .ep__gallery img {
     border-radius: 2rem;
     transition: all 1s; }
@@ -741,7 +739,7 @@ body {
   gap: 1rem;
   justify-items: stretch;
   align-items: stretch;
-  width: 70vw;
+  width: 75vw;
   margin: 10rem auto; }
   .us__gallery img {
     border-radius: 2rem;
@@ -772,6 +770,87 @@ body {
     grid-row: 3/4; }
 
 /* Island of Adventure */
+.ioa__destacado {
+  color: #f00c58;
+  font-style: italic;
+  font-weight: bold; }
+
+.welcome__ioa {
+  background-image: url(../img/IoA_cover.jpg); }
+  .welcome__ioa h1 {
+    font-size: 6rem;
+    color: #f00c58b2; }
+
+.ioa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 auto;
+  width: 50vw;
+  line-height: 2; }
+  .ioa__intro {
+    font-size: 2rem; }
+  .ioa h2 {
+    text-align: center;
+    margin-top: 5rem;
+    font-family: "Bubblegum Sans", cursive;
+    font-size: 4rem; }
+  .ioa p {
+    margin: 3rem 5rem;
+    text-align: center; }
+    .ioa p b {
+      color: #d13b15; }
+    .ioa p i {
+      color: #f7a2a2; }
+  .ioa figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0; }
+  .ioa img {
+    width: 30vw;
+    margin: 0 auto;
+    border-radius: 2rem; }
+  .ioa__gallery {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+    justify-items: stretch;
+    align-items: stretch;
+    width: 75vw;
+    margin: 10rem auto; }
+    .ioa__gallery img {
+      border-radius: 2rem;
+      transition: all 1s; }
+    .ioa__gallery img:hover {
+      transform: scale(1.2);
+      box-shadow: 0 0 1rem 1rem #ffb24e; }
+    .ioa__gallery img:nth-of-type(1) {
+      grid-column: 1/5;
+      grid-row: 1/2; }
+    .ioa__gallery img:nth-of-type(2) {
+      grid-column: 5/9;
+      grid-row: 1/2; }
+    .ioa__gallery img:nth-of-type(3) {
+      grid-column: 9/13;
+      grid-row: 1/3; }
+    .ioa__gallery img:nth-of-type(4) {
+      grid-column: 1/5;
+      grid-row: 2/3; }
+    .ioa__gallery img:nth-of-type(5) {
+      grid-column: 5/9;
+      grid-row: 2/4; }
+    .ioa__gallery img:nth-of-type(6) {
+      grid-column: 1/5;
+      grid-row: 3/4; }
+    .ioa__gallery img:nth-of-type(7) {
+      grid-column: 9/13;
+      grid-row: 3/4; }
+
 /* Contacto */
 .welcome__contacto {
   background-image: url(../img/orlando_MCO.jpg);
@@ -811,10 +890,10 @@ body {
     margin: 5rem auto;
     width: 50vw;
     background: linear-gradient(to left, #373b44, #4286f4);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    box-shadow: 0 8px 32px 0 #1f26875e;
     backdrop-filter: blur(4px);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    border: 1px solid #ffffff2e;
     opacity: 90%; }
     .contacto__form--label {
       font-size: 2.4rem;
@@ -873,9 +952,9 @@ body {
 @media only screen and (max-width: 1100px) {
   .index__hr {
     box-shadow: 0 0 1rem 1rem #e4dada; }
-  .welcome__index, .welcome__mk, .welcome__ak, .welcome__hs, .welcome__ep, .welcome__us, .welcome__contacto {
+  .welcome__index, .welcome__mk, .welcome__ak, .welcome__hs, .welcome__ep, .welcome__us, .welcome__ioa, .welcome__contacto {
     margin: 5rem 0.5rem; }
-    .welcome__index h1, .welcome__mk h1, .welcome__ak h1, .welcome__hs h1, .welcome__ep h1, .welcome__us h1, .welcome__contacto h1 {
+    .welcome__index h1, .welcome__mk h1, .welcome__ak h1, .welcome__hs h1, .welcome__ep h1, .welcome__us h1, .welcome__ioa h1, .welcome__contacto h1 {
       font-size: 4rem; }
   .main {
     display: flex;

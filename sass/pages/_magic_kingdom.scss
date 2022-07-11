@@ -8,7 +8,7 @@
     @extend .welcome__index;
     background-image: url(../img/MK_cover.jpg);
     & h1 {
-        color: darkmagenta;
+        color: #f19bf1;
         font-size: map-get($font-sizes, text-xlarge);
     }
     & h3 {
@@ -60,7 +60,7 @@
     align-items: center;
     justify-items: stretch;
     margin: $spacing-medium auto;
-    width: 70vw;
+    width: 75vw;
     & img {
         border-radius: 2rem;
         transition: all 1s;

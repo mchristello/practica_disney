@@ -11,9 +11,6 @@
         font-size: map-get($font-sizes, text-xlarge);
         color: #dd2727;
     }
-    & img {
-        border-radius: 5rem;
-    }
 }
 
 .hs {
@@ -37,7 +34,7 @@
             color: #d17015;
         }
         & i {
-            color: #c0b1b1;
+            color: #ceb588;
         }
     }
     & figure {
@@ -57,7 +54,7 @@
         align-items: stretch;
         justify-items: stretch;
         margin: $spacing-medium auto;
-        width: 70vw;
+        width: 75vw;
         & img {
             border-radius: 2rem;
             transition: all 1s;
