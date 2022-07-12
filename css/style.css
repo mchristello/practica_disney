@@ -471,17 +471,17 @@ body {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   display: inline-block;
-  width: 2rem;
-  height: 2rem;
+  width: 4rem;
+  height: 4rem;
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 100% 100%; }
 
 .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e"); }
+  background-image: url("https://api.iconify.design/bi/arrow-left-circle.svg"); }
 
 .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); }
+  background-image: url("https://api.iconify.design/bi/arrow-right-circle.svg"); }
 
 .carousel-indicators {
   position: absolute;
@@ -925,6 +925,7 @@ body {
   width: 100%;
   background-color: #397a6f;
   box-shadow: 0 0 5rem 2rem #369b8b;
+  margin-top: 10rem;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -950,12 +951,8 @@ body {
 
 /* MediaQ */
 @media only screen and (max-width: 1100px) {
-  .index__hr {
-    box-shadow: 0 0 1rem 1rem #e4dada; }
-  .welcome__index, .welcome__mk, .welcome__ak, .welcome__hs, .welcome__ep, .welcome__us, .welcome__ioa, .welcome__contacto {
-    margin: 5rem 0.5rem; }
-    .welcome__index h1, .welcome__mk h1, .welcome__ak h1, .welcome__hs h1, .welcome__ep h1, .welcome__us h1, .welcome__ioa h1, .welcome__contacto h1 {
-      font-size: 4rem; }
+  .welcome__index h1, .welcome__mk h1, .welcome__ak h1, .welcome__hs h1, .welcome__ep h1, .welcome__us h1, .welcome__ioa h1, .welcome__contacto h1 {
+    font-size: 4rem; }
   .main {
     display: flex;
     flex-direction: column;
@@ -968,8 +965,6 @@ body {
     .main__cards--right {
       flex-direction: row; }
   /* MediaQ para Magic Kingdom */
-  .mk__hr {
-    box-shadow: 0 0 1.5rem 1.5rem #c16be9; }
   .mk__intro {
     line-height: 1.5;
     margin: 2.4rem 5rem; }
@@ -982,15 +977,11 @@ body {
     gap: 1rem;
     margin: 5rem auto; }
   /* MediaQ para Animal Kingdom */
-  .ak__hr {
-    box-shadow: 0 0 1.5rem 1.5rem #1d9240; }
   .welcome__ak h1 {
     top: 40% !important; }
   .ak, .mk, .ep {
     width: 75vw; }
   /* MediaQ para Hollywood */
-  .hs__hr {
-    box-shadow: 0 0 1.5rem 1.5rem #d81616; }
   .welcome__hs h1 {
     top: 55% !important; }
   .hs, .us {
@@ -1002,13 +993,224 @@ body {
       gap: 1rem;
       margin: 5rem auto; }
   /* MediaQ para Epcot */
-  .ep__hr {
-    box-shadow: 0 0 1.5rem 1.5rem #0d11ee; }
   .ep img {
     width: 50vw; }
   .ep__gallery {
     width: 85vw;
     margin: 5rem auto; }
   /* MediaQ para Universal */
+  .welcome__us h1 {
+    top: 55% !important; }
+  .us {
+    width: 85vw; }
+    .us img {
+      width: 70vw; }
+    .us__gallery {
+      width: 85vw;
+      gap: 1rem;
+      margin: 5rem auto; }
   /* MediaQ para IoA */
-  /* MediaQ para Footer */ }
+  .welcome__ioa h1 {
+    top: 55% !important; }
+  .ioa {
+    width: 85vw; }
+    .ioa img {
+      width: 70vw; }
+    .ioa__gallery {
+      width: 85vw;
+      gap: 1rem;
+      margin: 5rem auto; }
+  /* MediaQ para Contacto */
+  .welcome__contacto h1 {
+    top: 55% !important; }
+  .contacto {
+    margin: 5rem auto; }
+    .contacto__img {
+      transform: scale(1.18);
+      position: absolute; }
+    .contacto__form {
+      width: 70vw;
+      margin: 0 auto; } }
+
+/* Se oculta navbar */
+@media screen and (min-width: 769px) {
+  .outer-menu {
+    display: none; } }
+
+/* Se muestra menu hamburguesa */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: none; }
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .outer-menu {
+    top: 10vh;
+    left: 0;
+    z-index: 1;
+    position: fixed; }
+  .outer-menu .checkbox-toggle {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    opacity: 0; }
+  .outer-menu .checkbox-toggle:checked + .hamburger > div {
+    transform: rotate(135deg); }
+  .outer-menu .checkbox-toggle:checked + .hamburger > div:before {
+    top: 0;
+    transform: rotate(90deg); }
+  .outer-menu .checkbox-toggle:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+    opacity: 0; }
+  .outer-menu .checkbox-toggle:checked ~ .menu {
+    pointer-events: auto;
+    visibility: visible; }
+  .outer-menu .checkbox-toggle:checked ~ .menu > div {
+    transform: scale(1);
+    transition-duration: 0.75s; }
+  .outer-menu .checkbox-toggle:checked ~ .menu > div > div {
+    opacity: 1;
+    transition: opacity 0.4s ease 0.4s; }
+  .outer-menu .checkbox-toggle:checked:hover + .hamburger > div {
+    transform: rotate(225deg); }
+  .outer-menu .checkbox-toggle:hover + .hamburger {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); }
+  .outer-menu .hamburger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 0.5em 1em;
+    background: #ff6347;
+    border-radius: 0 0.12em 0.12em 0;
+    cursor: pointer;
+    transition: box-shadow 0.4s ease;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .outer-menu .hamburger > div {
+    position: relative;
+    flex: none;
+    width: 100%;
+    height: 2px;
+    background: #fefefe;
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .outer-menu .hamburger > div:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+    transition: all 0.4s ease; }
+  .outer-menu .hamburger > div:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+    transition: all 0.4s ease;
+    top: 10px; }
+  .outer-menu .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    visibility: hidden;
+    backface-visibility: hidden;
+    outline: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .outer-menu .menu .navbar__submenu {
+      display: none;
+      position: absolute;
+      background: #1ab28a;
+      padding: .5rem;
+      border-radius: 2rem;
+      border: solid snow;
+      transform: translate(110px, -75px); }
+      .outer-menu .menu .navbar__submenu li {
+        display: block;
+        white-space: nowrap;
+        line-height: 4rem;
+        font-size: 2rem; }
+      .outer-menu .menu .navbar__submenu a {
+        text-decoration: none;
+        color: #e2dcc3;
+        transition: all .7s; }
+      .outer-menu .menu .navbar__submenu a:hover {
+        text-decoration: underline;
+        color: #ffa07a; }
+    .outer-menu .menu li:hover ul {
+      display: block; }
+  .outer-menu .menu > div {
+    width: 2000px;
+    height: 2000px;
+    color: #e2dcc3;
+    background: #338f8ff7;
+    border-radius: 2rem;
+    transition: all 0.4s ease;
+    flex: none;
+    transform: scale(0);
+    backface-visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .outer-menu .menu > div > div {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    overflow-y: visible;
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .outer-menu .menu > div > div > ul {
+    list-style: none;
+    padding: 0 1em;
+    margin: 1rem;
+    display: block;
+    max-height: 100vh;
+    line-height: 3; }
+  .outer-menu .menu > div > div > ul > li {
+    padding: 0;
+    margin: 1em;
+    font-size: 24px;
+    display: block;
+    position: relative;
+    margin: 0 2.4rem; }
+  .outer-menu .menu > div > div > ul > li > a {
+    text-decoration: none;
+    position: relative;
+    display: inline;
+    cursor: pointer;
+    transition: color 0.4s ease;
+    color: #e2dcc3; }
+  .outer-menu .menu > div > div > ul > li > a:hover {
+    text-decoration: underline;
+    color: #ffa07a; }
+  .outer-menu .menu > div > div > ul > li > a:hover:after {
+    width: 100%; } }

@@ -1,13 +1,8 @@
-// MediaQuerys
+// MediaQuerys para menos de 1100px
 
 @media only screen and (max-width: 1100px) {
 
-    .index__hr {
-        box-shadow: 0 0 1rem 1rem #e4dada;
-    }
-
     .welcome__index {
-        margin: $spacing-small .5rem;
         & h1 {
             font-size: map-get($font-sizes, text-large);
         }
@@ -16,9 +11,11 @@
     .main {
         @include flex(column, center, center, 1rem);
         margin: 3rem auto;
+
         & img:hover {
             transform: none;
         }
+
         &__cards--right {
             flex-direction: row;
         }
@@ -26,16 +23,14 @@
 
     /* MediaQ para Magic Kingdom */
 
-    .mk__hr {
-        box-shadow: 0 0 1.5rem 1.5rem #c16be9;
-    }
-
     .mk__intro {
         line-height: 1.5;
         margin: $spacing-xsmall $spacing-small;
+
         &--history {
             width: 60vw;
         }
+
         & img {
             width: 40vw;
         }
@@ -49,12 +44,8 @@
 
     /* MediaQ para Animal Kingdom */
 
-    .ak__hr {
-        box-shadow: 0 0 1.5rem 1.5rem #1d9240;
-    }
-
     .welcome__ak h1 {
-        top: 40%!important;
+        top: 40% !important;
     }
 
     .ak {
@@ -63,19 +54,17 @@
 
     /* MediaQ para Hollywood */
 
-    .hs__hr {
-        box-shadow: 0 0 1.5rem 1.5rem #d81616;
-    }
-
     .welcome__hs h1 {
-        top: 55%!important;
+        top: 55% !important;
     }
 
     .hs {
         width: 85vw;
+
         & img {
             width: 70vw;
         }
+
         &__gallery {
             width: 85vw;
             gap: 1rem;
@@ -84,10 +73,6 @@
     }
 
     /* MediaQ para Epcot */
-
-    .ep__hr {
-        box-shadow: 0 0 1.5rem 1.5rem #0d11ee;
-    }
 
     .ep img {
         width: 50vw;
@@ -100,15 +85,305 @@
 
     /* MediaQ para Universal */
 
+    .welcome__us h1 {
+        top: 55% !important;
+    }
+
+    .us {
+        width: 85vw;
+
+        & img {
+            width: 70vw;
+        }
+
+        &__gallery {
+            width: 85vw;
+            gap: 1rem;
+            margin: $spacing-small auto;
+        }
+    }
 
 
     /* MediaQ para IoA */
 
+    .welcome__ioa h1 {
+        top: 55% !important;
+    }
+
+    .ioa {
+        width: 85vw;
+
+        & img {
+            width: 70vw;
+        }
+
+        &__gallery {
+            width: 85vw;
+            gap: 1rem;
+            margin: $spacing-small auto;
+        }
+    }
+
+    /* MediaQ para Contacto */
+
+    .welcome__contacto h1 {
+        top: 55% !important;
+    }
+
+    .contacto {
+        margin: $spacing-small auto;
+
+        &__img {
+            transform: scale(1.18);
+            position: absolute;
+        }
+
+        &__form {
+            width: 70vw;
+            margin: 0 auto;
+        }
+    }
+}
 
 
-    /* MediaQ para Footer */
+// MediaQuerys para menos de 750px
 
-    
+/* Se oculta navbar */
 
+@media screen and (min-width: 769px) {
+    .outer-menu {
+        display: none; } 
+}
+
+/* Se muestra menu hamburguesa */
+
+@media only screen and (max-width: 768px) {
+
+    .navbar {
+        display: none;
+    }
+
+    .flex-center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .outer-menu {
+        top: 10vh;
+        left: 0;
+        z-index: 1;
+        position: fixed;
+    }
+
+    .outer-menu .checkbox-toggle {
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        cursor: pointer;
+        width: 60px;
+        height: 60px;
+        opacity: 0;
+    }
+
+    .outer-menu .checkbox-toggle:checked+.hamburger>div {
+        transform: rotate(135deg);
+    }
+
+    .outer-menu .checkbox-toggle:checked+.hamburger>div:before {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    .outer-menu .checkbox-toggle:checked+.hamburger>div:after {
+        top: 0;
+        transform: rotate(90deg);
+        opacity: 0;
+    }
+
+    .outer-menu .checkbox-toggle:checked~.menu {
+        pointer-events: auto;
+        visibility: visible;
+    }
+
+    .outer-menu .checkbox-toggle:checked~.menu>div {
+        transform: scale(1);
+        transition-duration: 0.75s;
+    }
+
+    .outer-menu .checkbox-toggle:checked~.menu>div>div {
+        opacity: 1;
+        transition: opacity 0.4s ease 0.4s;
+    }
+
+    .outer-menu .checkbox-toggle:checked:hover+.hamburger>div {
+        transform: rotate(225deg);
+    }
+
+    .outer-menu .checkbox-toggle:hover+.hamburger {
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .outer-menu .hamburger {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 60px;
+        height: 60px;
+        padding: 0.5em 1em;
+        background: map-get($colors, orange-secondary);
+        border-radius: 0 0.12em 0.12em 0;
+        cursor: pointer;
+        transition: box-shadow 0.4s ease;
+        backface-visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .outer-menu .hamburger>div {
+        position: relative;
+        flex: none;
+        width: 100%;
+        height: 2px;
+        background: #fefefe;
+        transition: all 0.4s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .outer-menu .hamburger>div:before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: -10px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: inherit;
+        transition: all 0.4s ease;
+    }
+
+    .outer-menu .hamburger>div:after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: -10px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: inherit;
+        transition: all 0.4s ease;
+        top: 10px;
+    }
+
+    .outer-menu .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        visibility: hidden;
+        backface-visibility: hidden;
+        outline: 1px solid transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & .navbar__submenu {
+            display: none;
+            position:absolute;
+            background: map-get($colors, green-primary);
+            padding: .5rem;
+            border-radius: 2rem;
+            border:solid snow;
+            transform: translate(110px, -75px);
+            li {
+                display: block;
+                white-space: nowrap;
+                line-height: 4rem;
+                font-size: map-get($font-sizes, text-intermidiate);
+            }
+            a {
+                text-decoration: none;
+                color: #e2dcc3;
+                transition: all .7s;
+            }
+            a:hover {
+                text-decoration: underline;
+                color: map-get($colors, orange-primary);
+            }
+        }        
+        & li:hover ul {
+            display: block;
+        }
+    }
+
+    .outer-menu .menu>div {
+        width: 2000px;
+        height: 2000px;
+        color: #e2dcc3;
+        background: map-get($colors, base-secondary);
+        border-radius: 2rem;
+        transition: all 0.4s ease;
+        flex: none;
+        transform: scale(0);
+        backface-visibility: hidden;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .outer-menu .menu>div>div {
+        text-align: center;
+        max-width: 90vw;
+        max-height: 100vh;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        overflow-y: visible;
+        flex: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .outer-menu .menu>div>div>ul {
+        list-style: none;
+        padding: 0 1em;
+        margin: 1rem;
+        display: block;
+        max-height: 100vh;
+        line-height: 3;
+    }
+
+    .outer-menu .menu>div>div>ul>li {
+        padding: 0;
+        margin: 1em;
+        font-size: 24px;
+        display: block;
+        position: relative;
+        margin: 0 $spacing-xsmall;
+    }
+
+    .outer-menu .menu>div>div>ul>li>a {
+        text-decoration: none;
+        position: relative;
+        display: inline;
+        cursor: pointer;
+        transition: color 0.4s ease;
+        color: #e2dcc3;
+    }
+
+    .outer-menu .menu>div>div>ul>li>a:hover {
+        text-decoration: underline;
+        color: map-get($colors, orange-primary);
+    }
+    .outer-menu .menu>div>div>ul>li>a:hover:after {
+        width: 100%;
+    }
 
 }
