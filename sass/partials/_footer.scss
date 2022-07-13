@@ -16,7 +16,7 @@
     }
     &__redes {
         @include flex(row, flex-end, center, 2rem);
-        width: 20%;
+        width: 40%;
         margin-right: 3%;
         & img {
             width: 4rem;

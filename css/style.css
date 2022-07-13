@@ -96,6 +96,10 @@ body {
   color: snow;
   background-color: #00103a; }
 
+img {
+  max-width: 100%;
+  display: block; }
+
 /* Header */
 .navbar {
   display: flex;
@@ -943,7 +947,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     gap: 2rem;
-    width: 20%;
+    width: 40%;
     margin-right: 3%; }
     .footer__redes img {
       width: 4rem; }
@@ -1230,8 +1234,8 @@ body {
 
 @media only screen and (max-width: 576px) {
   .welcome__index, .welcome__mk, .welcome__ak, .welcome__hs, .welcome__ep, .welcome__us, .welcome__ioa, .welcome__contacto {
-    max-width: 100vw;
-    max-height: 100vh; }
+    max-width: 100%;
+    min-height: 100vh; }
     .welcome__index h1, .welcome__mk h1, .welcome__ak h1, .welcome__hs h1, .welcome__ep h1, .welcome__us h1, .welcome__ioa h1, .welcome__contacto h1 {
       transform: none;
       top: auto;

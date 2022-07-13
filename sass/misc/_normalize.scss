@@ -17,3 +17,8 @@ body {
     color: map-get($colors, text-color);
     background-color: map-get($colors, base);
 }
+
+img {
+    max-width: 100%;
+    display: block;
+}
