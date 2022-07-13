@@ -3,11 +3,15 @@
 .welcome__index {
     @include flex(column, center, center, 0);
     text-align: center;
-    background-image: url(../img/GE_cover.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background: url(../img/GE_cover.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    // background-image: ;
+    // background-size: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
     height: 100vh;
     & h1 {
         font-size: map-get($font-sizes, text-xlarge);
