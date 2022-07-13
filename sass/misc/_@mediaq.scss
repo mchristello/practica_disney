@@ -364,6 +364,7 @@
     // MediaQ para index
 
     .welcome__index {
+        background-position: top;
         & h1 {
             transform: none;
             top: auto;
@@ -409,6 +410,13 @@
 
     .mk {
         width: 90vw;
+    }
+
+    .mk__gallery {
+        @include flex(column, center, center, 1rem);
+        & img {
+            width: 80vw;
+        }
     }
 
     // MediaQ para Animal Kingdom

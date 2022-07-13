@@ -160,17 +160,15 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0;
-  position: relative;
   text-align: center;
   background-image: url(../img/GE_cover.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  width: 100%;
   height: 100vh; }
   .welcome__index h1, .welcome__mk h1, .welcome__ak h1, .welcome__hs h1, .welcome__ep h1, .welcome__us h1, .welcome__ioa h1, .welcome__contacto h1 {
-    font-size: 4rem;
+    font-size: 6rem;
     font-family: "Chelsea Market", cursive;
     backdrop-filter: blur(0.8rem);
     border-radius: 5rem;
@@ -1231,10 +1229,12 @@ body {
       width: 30vw; } }
 
 @media only screen and (max-width: 576px) {
-  .welcome__index h1, .welcome__mk h1, .welcome__ak h1, .welcome__hs h1, .welcome__ep h1, .welcome__us h1, .welcome__ioa h1, .welcome__contacto h1 {
-    transform: none;
-    top: auto;
-    left: auto; }
+  .welcome__index, .welcome__mk, .welcome__ak, .welcome__hs, .welcome__ep, .welcome__us, .welcome__ioa, .welcome__contacto {
+    background-position: top; }
+    .welcome__index h1, .welcome__mk h1, .welcome__ak h1, .welcome__hs h1, .welcome__ep h1, .welcome__us h1, .welcome__ioa h1, .welcome__contacto h1 {
+      transform: none;
+      top: auto;
+      left: auto; }
   .main {
     width: 90vw; }
     .main img {
@@ -1271,6 +1271,14 @@ body {
       margin: 1rem; }
   .mk {
     width: 90vw; }
+  .mk__gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; }
+    .mk__gallery img {
+      width: 80vw; }
   .ak, .mk, .ep {
     width: 90vw;
     line-height: 2; }
