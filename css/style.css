@@ -1230,7 +1230,8 @@ body {
 
 @media only screen and (max-width: 576px) {
   .welcome__index, .welcome__mk, .welcome__ak, .welcome__hs, .welcome__ep, .welcome__us, .welcome__ioa, .welcome__contacto {
-    background-position: top; }
+    max-width: 100vw;
+    max-height: 100vh; }
     .welcome__index h1, .welcome__mk h1, .welcome__ak h1, .welcome__hs h1, .welcome__ep h1, .welcome__us h1, .welcome__ioa h1, .welcome__contacto h1 {
       transform: none;
       top: auto;
@@ -1254,6 +1255,7 @@ body {
     .main__cards--content {
       text-align: center; }
   .mk__intro {
+    max-width: 100vw;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -1279,6 +1281,8 @@ body {
     gap: 1rem; }
     .mk__gallery img {
       width: 80vw; }
+  .welcome__ak {
+    max-width: 100vw; }
   .ak, .mk, .ep {
     width: 90vw;
     line-height: 2; }
@@ -1286,6 +1290,8 @@ body {
     width: 80vw; }
     .carousel p {
       display: none; }
+  .welcome__hs {
+    max-width: 100vw; }
   .hs, .us {
     width: 90vw; }
     .hs__intro {
@@ -1298,15 +1304,47 @@ body {
     .hs img, .us img {
       width: 85vw; }
     .hs__gallery {
-      width: 90vw; }
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem; }
+      .hs__gallery img {
+        max-width: 80vw; }
+      .hs__gallery img:hover {
+        transform: none;
+        box-shadow: none; }
+  .welcome__ep {
+    max-width: 100vw; }
   .ep img {
     width: 80vw; }
   .ep__gallery {
-    width: 90vw; }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; }
+    .ep__gallery img {
+      max-width: 80vw; }
+    .ep__gallery img:hover {
+      transform: none;
+      box-shadow: none; }
   .welcome__us {
-    background-image: url(../img/US_cover_responsive.jpg); }
+    background-image: url(../img/US_cover_responsive.jpg);
+    max-width: 100vw; }
   .us__intro {
     margin-top: 5rem; }
+  .us__gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; }
+    .us__gallery img {
+      max-width: 80vw; }
+    .us__gallery img:hover {
+      transform: none;
+      box-shadow: none; }
   .welcome__ioa {
     background-image: url(../img/IoA_cover_responsive.jpg); }
   .ioa {
@@ -1315,6 +1353,17 @@ body {
       margin: 2.4rem auto; }
     .ioa img {
       width: 90vw; }
+    .ioa__gallery {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem; }
+      .ioa__gallery img {
+        max-width: 80vw; }
+      .ioa__gallery img:hover {
+        transform: none;
+        box-shadow: none; }
   .contacto img {
     transform: none;
     width: 95vw; }

@@ -364,7 +364,8 @@
     // MediaQ para index
 
     .welcome__index {
-        background-position: top;
+        max-width: 100vw;
+        max-height: 100vh;
         & h1 {
             transform: none;
             top: auto;
@@ -391,6 +392,7 @@
     // MediaQ para Magic Kingdom
 
     .mk__intro {
+        max-width: 100vw;
         @include flex(column-reverse, center, center, 1rem);
         margin: $spacing-xsmall $spacing-small;
         &--history {
@@ -421,6 +423,10 @@
 
     // MediaQ para Animal Kingdom
 
+    .welcome__ak {
+        max-width: 100vw;
+    }
+
     .ak {
         width: 90vw;
         line-height: 2;
@@ -434,6 +440,10 @@
     }
 
     // MediaQ para Hollywood
+
+    .welcome__hs {
+        max-width: 100vw;
+    }
 
     .hs {
         width: 90vw;
@@ -452,18 +462,36 @@
         }
         
         &__gallery {
-            width: 90vw;
+            @include flex(column, center, center, 1rem);
+            & img {
+                max-width: 80vw;
+            }
+            & img:hover {
+                transform: none;
+                box-shadow: none;
+            }
         }
     }
 
     // MediaQ para Epcot
+
+    .welcome__ep {
+        max-width: 100vw;
+    }
 
     .ep {
         & img {
             width: 80vw;
         }
         &__gallery {
-            width: 90vw;
+            @include flex(column, center, center, 1rem);
+            & img {
+                max-width: 80vw;
+            }
+            & img:hover {
+                transform: none;
+                box-shadow: none;
+            }
         }
     }
 
@@ -471,11 +499,22 @@
 
     .welcome__us {
         background-image: url(../img/US_cover_responsive.jpg);
+        max-width: 100vw;
     }
 
     .us {
         &__intro {
             margin-top: $spacing-small;
+        }
+        &__gallery {
+            @include flex(column, center, center, 1rem);
+            & img {
+                max-width: 80vw;
+            }
+            & img:hover {
+                transform: none;
+                box-shadow: none;
+            }
         }
     }
 
@@ -492,6 +531,16 @@
         }
         & img {
             width: 90vw;
+        }
+        &__gallery {
+            @include flex(column, center, center, 1rem);
+            & img {
+                max-width: 80vw;
+            }
+            & img:hover {
+                transform: none;
+                box-shadow: none;
+            }
         }
     }
 
