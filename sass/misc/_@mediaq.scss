@@ -364,8 +364,6 @@
     // MediaQ para index
 
     .welcome__index {
-        max-width: 100%;
-        min-height: 100vh;
         & h1 {
             transform: none;
             top: auto;
@@ -423,10 +421,6 @@
 
     // MediaQ para Animal Kingdom
 
-    .welcome__ak {
-        max-width: 100vw;
-    }
-
     .ak {
         width: 90vw;
         line-height: 2;
@@ -440,10 +434,6 @@
     }
 
     // MediaQ para Hollywood
-
-    .welcome__hs {
-        max-width: 100vw;
-    }
 
     .hs {
         width: 90vw;
@@ -475,10 +465,6 @@
 
     // MediaQ para Epcot
 
-    .welcome__ep {
-        max-width: 100vw;
-    }
-
     .ep {
         & img {
             width: 80vw;
@@ -499,7 +485,6 @@
 
     .welcome__us {
         background-image: url(../img/US_cover_responsive.jpg);
-        max-width: 100vw;
     }
 
     .us {
@@ -568,7 +553,7 @@
     // MediaQ para Footer
 
     .footer {
-        @include flex(column-reverse, center, center, 4rem);
+        @include flex(column-reverse, center, center, 2rem);
         min-height: 20rem;
         &__redes {
             @include flex(row, center, center, 3rem)

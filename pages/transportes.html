@@ -1,18 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Todo lo que tenes que saber acerca de los parques de Disney y Universal en Orlando, Florida, y más.">
-    <meta name="keywords" content="DISNEY, ORLANDO, PARQUES, MAGIC KINGDOM, ANIMAL KINGDOM, HOLLYWOOD STUDIOS, EPCOT, UNIVERSAL STUDIOS, ISLAND OF ADVENTURES, ATRACCIONES, MAGIA, MICKEY, PELICULAS, HARRY POTTER, HULK, AVATAR, EVEREST, STAR WARS, HOUNTED MANSION, VELICICOASTER, HAGRID'S MOTORBIKE, GUARDIANES DE LA GALAXIA, FROZEN, TOY STORY, FANTASMIC, SAFARI, SPLASH MOUNTAIN, WORLD SHOWCASE">
+    <meta name="description"
+        content="El parque más mágico del mundo y todo lo que tenes que saber para que perderte nada!">
+    <meta name="keywords"
+        content="DISNEY, ORLANDO, PARQUES, PARKS, MAGIC KINGDOM, CASTILLO, CASTLE, SPACE MOUNTAIN, SEVEN DWARFS TRAIN, HOUNTED MANSION, TRON ROLLERCOASTER, SPLASH MOUNTAIN, FIREWORKS">
     <link rel="shortcut icon" href="../img/paris.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Let's Go To Disney! | Contacto</title>
+
+
+    <!-- CSS de Bootstrap -->
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+
+    <title>Let's Go To Disney! | Magic Kingdom</title>
 </head>
 <body>
 
+    <!-- Navbar para desktop -->
+    
     <nav class="navbar">
         <img class="navbar__logo" src="../img/paris.png" alt="disney logo castillo">
         <ul class="navbar__menu">
@@ -32,7 +43,7 @@
         </ul>
     </nav>
 
-    <!-- prueba de menu hamburg -->
+    <!-- Menu hamburg para mobile -->
 
     <nav class="outer-menu">
         <input class="checkbox-toggle" type="checkbox">
@@ -62,46 +73,20 @@
         </section>
     </nav>
 
-    <section class="welcome__contacto">
-        <h1>Ahora sí. Vayamos a Disney</h1>
+    <section class="welcome__transportes">
+        <h1>(Página en construcción, no te apures que todavía no vas a ir a Disney!)</h1>
     </section>
-
-    <h2 class="title">Vamos a encontrar la mejor opción.</h2>
-
-    <section class="contacto">
-        <img src="../img/mickey_vuelo.jpg" alt="mickey volando" class="contacto__img">
-        <form action="mailto: m.christello@hotmail.com" method="post" target="_blank" class="contacto__form">
-            <label class="contacto__form--label" for="name"> Nombre:</label>
-                <input class="contacto__form--input" type="name" name="name" placeholder="Nombre y Apellido" required>
-            
-            <label class="contacto__form--label" for="email"> Email:</label>
-                <input class="contacto__form--input" type="email" name="email" placeholder="ejemplo@ejemplo.com" required>
-            
-            <label class="contacto__form--label" for="origen">Origen:</label>
-                <input class="contacto__form--input" type="text" name="origen" placeholder="Desde donde viajas?" required>
-            
-            <label class="contacto__form--label" for="destino">Destino:</label>
-                <input class="contacto__form--input" type="text" name="destino" placeholder="A donde viajas?" required>
-            
-            <label class="contacto__form--label" for="fecha_salida">Fecha de Salida:</label>
-                <input class="contacto__form--input" type="date" name="fecha_salida" placeholder="Salida" required>
-            
-            <label class="contacto__form--label" for="fehca_regreso">Fecha de Regreso:</label>
-                <input class="contacto__form--input" type="date" name="fecha_regreso" placeholder="Regreso" required>
-            
-            <label class="contacto__form--label" for="pasajeros">Cantidad de Pasajeros:</label>
-                <select class="contacto__form--input" type="number" name="pasajeros" placeholder="Pasajeros" required>
-                    <option value="0">Cuantos viajan con vos?</option>
-                    <option value="1">1 persona</option>
-                    <option value="2">2 personas</option>
-                    <option value="3">3 personas</option>
-                    <option value="4">4 personas</option>
-                    <option value="5">5 personas</option>
-                    <option value="6">6 personas</option>
-                </select>
-            <button type="button" name="enviar" class="contacto__form--boton">Cotizar</button>
-        </form>
-    </section>
+    
+    <main class="transportes">
+        <section class="transportes__intro">
+            <h2>Toda la info que necesitas.</h2>
+            <p>Si estás un poco perdid@ con el tema de <b>"transportes"</b> dentro y fuera de los parques, voy a tratar de ayudarte.</p>
+        </section>
+        <section class="transportes__">
+            <h2></h2>
+        </section>
+    </main>
+        
 
     <footer class="footer">
         <p>Copyright© 2022 || Diseñado y Desarrollado por <span class="destacado">Matias Christello</span>. || 😁🙌</p>
@@ -112,10 +97,10 @@
         </div>
     </footer>
 
-    <script src="../js/index.js"></script>
-    <script src="../js/clase_3.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
-
 </html>
-

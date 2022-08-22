@@ -1,0 +1,40 @@
+// Style para Transportes
+
+.transportes__destacado {
+    @include destacado(#fff3e8, italic, bold);
+}
+
+.welcome__transportes {
+    @extend .welcome__index;
+    background-image: url(https://images.unsplash.com/photo-1579958902298-1f633228e9da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80);
+    & h1 {
+        font-size: map-get($font-sizes, text-xlarge);
+        color: map-get($colors, blue-primary);
+    }
+}
+
+.transportes {
+    @include flex(column, center, center, 1rem);
+    margin: 0 auto;
+    width: 50vw;
+    line-height: 2;
+    text-align: center;
+    &__intro {
+        font-size: 2rem;
+    }
+    & h2 {
+        margin-top: 5rem;
+        font-family: $font-title;
+        font-size: map-get($font-sizes, text-large);
+    }
+    & p {
+        margin: 3rem 5rem;
+        & b {
+            color: #fff3e8;
+        }
+        & i {
+            color: #ceb588;
+        }
+    }
+
+}

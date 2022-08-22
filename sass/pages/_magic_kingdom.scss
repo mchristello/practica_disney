@@ -57,7 +57,7 @@
     grid-template-rows: repeat(5, 1fr);
     gap: 2rem;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     justify-items: stretch;
     margin: $spacing-medium auto;
     width: 75vw;

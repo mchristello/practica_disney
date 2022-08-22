@@ -18,18 +18,17 @@
     margin: 0 auto;
     width: 50vw;
     line-height: 2;
+    text-align: center;
     &__intro {
         font-size: 2rem;
     }
     & h2 {
-        text-align: center;
         margin-top: 5rem;
         font-family: $font-title;
         font-size: map-get($font-sizes, text-large);
     }
     & p{
         margin: 3rem 5rem;
-        text-align: center;
         & b {
             color: #d17015;
         }

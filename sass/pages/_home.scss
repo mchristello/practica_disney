@@ -3,15 +3,11 @@
 .welcome__index {
     @include flex(column, center, center, 0);
     text-align: center;
-    background: url(../img/GE_cover.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    // background-image: ;
-    // background-size: cover;
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-attachment: fixed;
+    background-image: url(../img/GE_cover.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 100vh;
     & h1 {
         font-size: map-get($font-sizes, text-xlarge);
@@ -19,9 +15,7 @@
         backdrop-filter: blur(.8rem);
         border-radius: 5rem;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        width: fit-content;
     }
 }
 
@@ -31,9 +25,12 @@
     grid-template-rows: repeat(3, 1fr);
     gap: 2rem;
     margin: $spacing-medium auto;
-    width: 85vw;
+    width: 95vw;
+    & a {
+        text-decoration: none;
+    }
     & img {
-        width: 15vw;
+        max-width: 85vw;
     }
     & .card--mk {
         grid-column: 1/7;
@@ -43,15 +40,15 @@
         grid-column: 1/7;
         grid-row: 2/3;
     }    
-    & .card--hs {
+    & .card--us {
         grid-column: 1/7;
         grid-row: 3/4;
     }    
-    & .card--e {
+    & .card--hs {
         grid-column: 7/13;
         grid-row: 1/2;
     }    
-    & .card--us {
+    & .card--e {
         grid-column: 7/13;
         grid-row: 2/3;
     }    
